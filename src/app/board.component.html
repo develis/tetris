@@ -1,0 +1,43 @@
+<main>
+    <nav class="navbar navbar-expand-sm navbar_cor d-flex justify-content-center mb-5">
+        <a class="navbar-brand" href="#">TETRIS</a>
+    </nav>
+    <div class="container-fluid">
+        
+
+        <div class="row">
+            <div class="col-md-6 d-flex justify-content-around align-items-center">
+
+                <div>
+                    <difficulty-component #difficulty [attr.readonly]="!gameStarted"></difficulty-component>
+                    <p>Pontuação: {{ points }}</p>
+                    <p>Linhas: {{ lines }}</p>
+                    <p>Level: {{ level }}</p>
+                    <p>Pontuação Máxima:{{ highScore }}</p>
+                    <p>Próximo Bloco:</p>
+                    <canvas #next class="next"></canvas>
+                    <div>
+                        <button (click)="play()" *ngIf="!gameStarted" class="btn btn-success">
+                            Jogar
+                        </button>
+                        <button (click)="gameOver()" *ngIf="gameStarted" class="btn btn-danger">
+                            Resetar
+                        </button>
+                        <button (click)="pause()" [class.button-disabled]="!gameStarted" class="btn btn-warning">
+                            Pausar
+                        </button>
+                    </div>
+                </div>
+
+                <canvas #board class="tabuleiro"></canvas>
+            </div>
+        </div>
+
+        <div class="row text-center mt-5 pt-5">
+            <div class="col-md-12">
+                <p>2021 &copy; Elis Marcela, Margareth Breis, Natali Lucas, Nigério Bezerra, Pamela Oliveira</p>
+            </div>
+        </div>
+
+    </div>
+</main>
