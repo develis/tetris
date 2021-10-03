@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ng-tetris": {
+    "tetris": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ng-tetris",
+            "outputPath": "dist/tetris",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,24 +63,24 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ng-tetris:build"
+            "browserTarget": "tetris:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ng-tetris:build:production"
+              "browserTarget": "tetris:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng-tetris:build"
+            "browserTarget": "tetris:build"
           }
         }
       }
     }
   },
-  "defaultProject": "ng-tetris",
+  "defaultProject": "tetris",
   "cli": {
     "analytics": false
   }
