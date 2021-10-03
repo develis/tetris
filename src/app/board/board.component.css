@@ -1,42 +1,52 @@
 * {
-    font-family: 'Press Start 2P', cursive;
-  }
-  
-  .navbar_cor{
-    background-color: grey;
-  }
-  
-  .navbar-brand{
-    color: white;
-    font-size: 2.5rem !important;
-  }
-  
-  .navbar-brand:hover {
-    color: #25393D;
-  }
-  
-  main, html{
-    background-image: url('https://images2.alphacoders.com/667/thumb-1920-66702.jpg');
-    background-size: cover;
-  }
-  
+  font-family: 'Press Start 2P', cursive;
+}
+
+.navbar_cor {
+  background-color: grey;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 2.5rem !important;
+}
+
+.navbar-brand:hover {
+  color: #25393D;
+}
+
+main, html {
+  background-image: url('https://images2.alphacoders.com/667/thumb-1920-66702.jpg');
+  background-size: cover;
+}
+
+.tabuleiro {
+  width: 400px;
+  border: 0.5vh solid #2A303B;
+  box-shadow: 15px 15px 8px rgb(128, 128, 128);
+  background: #25393D;
+}
+
+.botoes {
+  display: none !important;
+}
+
+@media (max-width: 767.98px) {
   .tabuleiro {
-    width: 400px;
-    border: 0.5vh solid #2A303B;
-    box-shadow: 15px 15px 8px rgb(128, 128, 128);
-    background: #25393D;
+    width: 220px;
+    margin-left: 5vw;
   }
-  
-  @media (max-width: 767.98px) {
-    .tabuleiro {
-      width: 174px;
-    }
+  .botoes {
+    display: flex !important;
   }
-  @media (max-width: 767.98px) {
-    .painel {
-      font-size: 50% !important;
-      
-    }
-    
+}
+
+@media (max-width: 767.98px) {
+  .painel {
+    font-size: 50% !important;
   }
-  
+}
+
+.botoes_comando{
+  margin-top: 5vh !important;
+}

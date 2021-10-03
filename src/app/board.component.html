@@ -3,11 +3,10 @@
         <a class="navbar-brand" href="#">TETRIS</a>
     </nav>
     <div class="container-fluid">
-        
+
 
         <div class="row">
-            <div class="col-md-6 d-flex justify-content-around align-items-center">
-
+            <div class="col-xs-12 d-flex justify-content-around align-items-center">
                 <div>
                     <difficulty-component #difficulty [attr.readonly]="!gameStarted"></difficulty-component>
                     <p>Pontuação: {{ points }}</p>
@@ -28,13 +27,11 @@
                         </button>
                     </div>
                 </div>
-
                 <canvas #board class="tabuleiro"></canvas>
             </div>
         </div>
-
         <div class="row text-center mt-5 pt-5">
-            <div class="col-md-12">
+            <div class="col-xs-12">
                 <p>2021 &copy; Elis Marcela, Margareth Breis, Natali Lucas, Nigério Bezerra, Pamela Oliveira</p>
             </div>
         </div>
