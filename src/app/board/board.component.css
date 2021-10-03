@@ -29,12 +29,14 @@
   
   @media (max-width: 767.98px) {
     .tabuleiro {
-      width: 350px;
+      width: 174px;
     }
   }
   @media (max-width: 767.98px) {
     .painel {
-      font-size: 70%;
+      font-size: 50% !important;
+      
     }
+    
   }
   
