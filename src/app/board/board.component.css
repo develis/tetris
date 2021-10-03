@@ -34,7 +34,7 @@ main, html {
 @media (max-width: 767.98px) {
   .tabuleiro {
     width: 220px;
-    margin-left: 5vw;
+    margin-left: 15vw;
   }
   .botoes {
     display: flex !important;
