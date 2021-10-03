@@ -9,3 +9,6 @@
 ✔ Alteração no sistema de pontuação <br>
 ✔ Estilização do tabuleiro e das peças <br>
 ✔ Mobile-friendly
+
+## 💬 Instalar localmente: 
+`` npm install ``
