@@ -1,0 +1,40 @@
+* {
+    font-family: 'Press Start 2P', cursive;
+  }
+  
+  .navbar_cor{
+    background-color: grey;
+  }
+  
+  .navbar-brand{
+    color: white;
+    font-size: 2.5rem !important;
+  }
+  
+  .navbar-brand:hover {
+    color: #25393D;
+  }
+  
+  main, html{
+    background-image: url('https://images2.alphacoders.com/667/thumb-1920-66702.jpg');
+    background-size: cover;
+  }
+  
+  .tabuleiro {
+    width: 400px;
+    border: 0.5vh solid #2A303B;
+    box-shadow: 15px 15px 8px rgb(128, 128, 128);
+    background: #25393D;
+  }
+  
+  @media (max-width: 767.98px) {
+    .tabuleiro {
+      width: 350px;
+    }
+  }
+  @media (max-width: 767.98px) {
+    .painel {
+      font-size: 70%;
+    }
+  }
+  

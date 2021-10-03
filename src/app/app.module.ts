@@ -2,8 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { TabuleiroComponent } from './board.component';
-import { DifficultyComponent } from './difficulty.component';
+import { TabuleiroComponent } from './board';
+import { DifficultyComponent } from './difficulty';
 
 @NgModule({
   declarations: [AppComponent, TabuleiroComponent, DifficultyComponent],

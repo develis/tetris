@@ -1,0 +1,70 @@
+<main>
+    <nav class="navbar navbar-expand-sm navbar_cor d-flex justify-content-center mb-5">
+        <a class="navbar-brand" href="#">TETRIS</a>
+    </nav>
+    <div class="container-fluid">
+
+
+        <div class="row">
+            <div class="col-md-4 col-lg-3 d-flex align-items-left">
+
+                <div class="painel">
+                    <div>
+                        <difficulty-component #difficulty [attr.readonly]="!gameStarted"></difficulty-component>
+                        <p>Pontuação: {{ points }}</p>
+                        <p>Linhas: {{ lines }}</p>
+                        <p>Level: {{ level }}</p>
+                        <p>Pont. Máxima:{{ highScore }}</p>
+                        <p>Próximo Bloco:</p>
+                        <canvas #next class="next"></canvas>
+
+                    </div>
+
+                    <div class="mb-5">
+                        <button (click)="play()" *ngIf="!gameStarted" class="btn btn-success">
+                            Jogar
+                        </button>
+                        <button (click)="gameOver()" *ngIf="gameStarted" class="btn btn-danger">
+                            Resetar
+                        </button>
+                        <button (click)="pause()" [class.button-disabled]="!gameStarted" class="btn btn-warning">
+                            Pausar
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-8 d-flex align-items-left">
+                <canvas #board class="tabuleiro"></canvas>
+            </div>
+        </div>
+
+        <div class="row mt-3 d-flex justify-content-around d-md-none">
+            <div class="col-6">
+                <div class="d-flex justify-content-center align-items-center my-4">
+                    <input class="btn btn-light rounded-circle p-2"
+                        type="button" value="☼" (click)="onGamePadClick(1)">
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="d-flex justify-content-between">
+                    <input class="btn btn-light rounded-circle p-2" type="button" value="◄" (click)="onGamePadClick(3)">
+                    <input class="btn btn-light rounded-circle p-2" type="button" value="►" (click)="onGamePadClick(4)">
+                </div>
+
+                <div class="d-flex justify-content-center align-items-center my-3">
+                    <input class="btn btn-light rounded-circle p-2" type="button" value="▼" (click)="onGamePadClick(2)">
+                </div>
+            </div>
+        </div>
+
+        <div class="row text-center mt-5 pt-5">
+            <div class="col-md-12">
+                <p>2021 &copy; Elis Marcela, Margareth Breis, Natali Lucas, Nigério Bezerra, Pamela Oliveira</p>
+            </div>
+        </div>
+
+
+
+    </div>
+</main>
