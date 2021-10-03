@@ -1,4 +1,4 @@
-@charset "UTF-8";*{font-family:Press Start\ 2P,cursive}.navbar_cor{background-color:grey}.navbar-brand{color:#fff;font-size:2.5rem!important}.navbar-brand:hover{color:#25393d}html,main{background-image:url(https://images2.alphacoders.com/667/thumb-1920-66702.jpg);background-size:cover}.tabuleiro{width:400px;border:.5vh solid #2a303b;box-shadow:15px 15px 8px grey;background:#25393d}@media (max-width:767.98px){.tabuleiro{width:300px}}/*!
+@charset "UTF-8";/*!
  * Bootstrap v5.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
