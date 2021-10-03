@@ -21,7 +21,7 @@ main, html {
 }
 
 .tabuleiro {
-  width: 400px;
+  width: 18vw;
   border: 0.5vh solid #2A303B;
   box-shadow: 15px 15px 8px rgb(128, 128, 128);
   background: #25393D;
