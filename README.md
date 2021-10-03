@@ -1,6 +1,6 @@
 # Tetris feito em Angular
 📍 https://develis.github.io/tetris/ <br>
-📍 Reproduzido por: Elis Marcela, Natali Lucas, Nigério Bezerra, Pamela Oliveira. <br>
+📍 Reproduzido por: Elis Marcela, Margareth Reis, Natali Lucas, Nigério Bezerra, Pamela Oliveira. <br>
 📍 Baseado no artigo publicado no site Medium produzido por <a href="https://twitter.com/melcor76">Michael Karén</a>. <br>
 
 ## 🚀 Implementações: 
